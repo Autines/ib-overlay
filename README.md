@@ -1,5 +1,5 @@
 # ib-overlay
-Custom overlay files and scripts for OpenWrt ImageBuilder 24.10.2
+Custom overlay files and scripts for OpenWrt ImageBuilder 25.12.4
 <br>
 此项目 只记录了我修改的文件和脚本，ImageBuilder工具包并不在其中.你可以把它当做模板,适当修改,就能定制属于自己的固件了<br>
 ### 目前本项目有关集成第三方插件的逻辑 也同步到了云端的ImageBuilder项目 希望对各位有所启发
@@ -11,11 +11,11 @@ https://github.com/wukongdaily/AutoBuildImmortalWrt
 ## 1、下载ImageBuilder
 ```
 # 下载
-wget https://mirrors.aliyun.com/openwrt/releases/24.10.2/targets/x86/64/openwrt-imagebuilder-24.10.2-x86-64.Linux-x86_64.tar.zst
+wget https://mirrors.tuna.tsinghua.edu.cn/openwrt/releases/25.12.4/targets/x86/64/openwrt-imagebuilder-25.12.4-x86-64.Linux-x86_64.tar.zst
 # 解压
-tar --use-compress-program=unzstd -xvf openwrt-imagebuilder-24.10.2-x86-64.Linux-x86_64.tar.zst
+tar --use-compress-program=unzstd -xvf openwrt-imagebuilder-25.12.4-x86-64.Linux-x86_64.tar.zst
 # 进入ImageBuilder目录
-cd openwrt-imagebuilder-24.10.2-x86-64.Linux-x86_64/
+cd openwrt-imagebuilder-25.12.4-x86-64.Linux-x86_64/
 ```
 
 ## 定位到ImageBuilder的根目录下
@@ -23,12 +23,12 @@ cd openwrt-imagebuilder-24.10.2-x86-64.Linux-x86_64/
 ## 2、下载整个项目的 master.zip
 
 ```
-wget -c -O master.zip.tmp https://github.com/wukongdaily/ib-overlay/archive/refs/heads/master.zip && mv -f master.zip.tmp master.zip
+wget -c -O master.zip.tmp https://github.com/Autines/ib-overlay/archive/refs/heads/master.zip && mv -f master.zip.tmp master.zip
 
 ```
 [![Github](https://img.shields.io/badge/如果下载不动,可套用加速前缀,点这里前往-d6acef?logo=github&logoColor=fff&labelColor=000&style=for-the-badge)](https://wkdaily.cpolar.top/archives/1) 
 ``` 
-wget -c -O master.zip.tmp https://gh-proxy.com/https://github.com/wukongdaily/ib-overlay/archive/refs/heads/master.zip && mv -f master.zip.tmp master.zip
+wget -c -O master.zip.tmp https://gh-proxy.com/https://github.com/Autines/ib-overlay/archive/refs/heads/master.zip && mv -f master.zip.tmp master.zip
 
 ```
 ## 3、解压 master.zip 到当前目录(ImageBuilder的根目录)，去除无关文件
@@ -78,7 +78,7 @@ https://github.com/wukongdaily/RunFilesBuilder
 https://github.com/wukongdaily/AutoBuildImmortalWrt
 
 ### OpenWrt ImageBuilder 官网下载地址
-https://downloads.openwrt.org/releases/24.10.2/targets/x86/64/
+https://downloads.openwrt.org/releases/25.12.4/targets/x86/64/
 
 
 ## 默认脚本build.sh 构建的固件特点
